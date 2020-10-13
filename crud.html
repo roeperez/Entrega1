@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Sansung</title>
+  <link rel="stylesheet" type="text/css" href="crud.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="tituloCRUD">
+        <h1>GESTION DE PRODUCTOS</h1>
+        <p>Servicio de control de productos Sansung</p>
+    </div>
+
+<div class="form">
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+    <input type="text" id="productoid" placeholder="ID producto">
+    <input type="text" id="productotipo" placeholder="Tipo producto">
+    <input type="text" id="productomodelo" placeholder="Modelo producto">
+    <input type="text" id="productoanno" placeholder="Año producto">
+    <input type="text" id="productoprecio" placeholder="Precio producto">
+    <input type="submit" value="Guardar" class="btn btn-primary">
+    </form>
+    <p>Cantidad de productos: </p>
+    <p id="counter"></p>
+
+    <table>
+    <tr class="productos">
+        <th><h3>Listado de productos:</h3></th>
+    </tr>
+        <tbody id="listado">
+        </tbody>
+    </table>
+</div>
+
+<div id="edit-box" role="aria-hidden">
+    <form action="javascript:void(0);" method="POST" id="save-edit">
+      <input type="text" id="edit-todo">
+      <input type="text" id="edit-productotipo" placeholder="Tipo producto">
+      <input type="text" id="edit-productoanno" placeholder="Año producto">
+      <input type="text" id="edit-productoprecio" placeholder="Precio producto">
+      <input type="submit" value="Guardar" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+    </form>
+  </div>
+
+<script src="crud.js"></script>
+</body>
+</html>
