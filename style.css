@@ -31,6 +31,12 @@ header {
     border-radius: 40px;
     background: linear-gradient(90deg, #755bea, #ff72c0);
 }
+
+.button:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+}
 .logo-container, .nav-links {
     display: flex;
 }
@@ -156,7 +162,9 @@ nav {
     height: auto;
     border: 2px solid #c36cbb;
     border-radius: 12px;
+    overflow: hidden;
 }
+
 
 .big-circle{
     position: absolute;
