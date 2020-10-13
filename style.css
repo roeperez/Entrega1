@@ -18,6 +18,19 @@ header {
     align-items: center;
 }
 
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 12px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+}
 .logo-container, .nav-links {
     display: flex;
 }
@@ -142,6 +155,7 @@ nav {
     width: 100%;
     height: auto;
     border: 2px solid #c36cbb;
+    border-radius: 12px;
 }
 
 .big-circle{
@@ -173,7 +187,7 @@ footer {
     display: flex;
     width: 100%;
     margin: auto;
-    height: 10vh;
+    height: 7vh;
     align-items: center;
     background: #c36cbb;
     position: fixed;
