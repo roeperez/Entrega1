@@ -161,6 +161,7 @@ label #sidebar_btn:hover{
   background-size: cover;
   height: 100vh;
   transition: 0.5s;
+
 }
 
 #check:checked ~ .content{
